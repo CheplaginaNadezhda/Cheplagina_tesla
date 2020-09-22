@@ -1,0 +1,70 @@
+body{
+	min-width: 1440px;
+}
+	.header{
+    	padding:16px 0 0 34px;
+    	display: flex;
+}
+  	.header__logo{
+		width: 166px;
+		height: 51px;
+		background: url(img/Tesla-Wordmark-Red.svg) no-repeat;
+		margin-right: 219px;
+}
+	.header__menu_middle{
+		margin-right: 181px;
+	}
+  	.menu__middle,
+  	.menu__right{
+  		list-style: none;
+}
+  	.menu_middle__item,
+  	.menu_right__item{
+		display: inline;
+}
+	.menu_middle__item:first-child{
+	margin-right: 59px;
+	}
+
+	.menu_middle__item:nth-child(2){
+		margin-right: 22px;
+	}
+	.menu_middle__item:nth-child(3){
+		margin-right: 40px;
+	}
+	.menu_middle__item:nth-child(4){
+		margin-right: 42px;
+	}
+  	.menu__item{
+		text-decoration: none;
+		font: 600 15px/18px Montserrat, arial, helvetica, sans-serif;
+		color: #000;
+}
+	.menu__item_red{	
+		color: #e51937;
+		position: relative;
+	}
+	.menu__item_red::after{	
+		position: absolute;
+		content: "";
+		display: block;
+		top: 26px;
+		width: 60px;
+		height: 2px;
+		background: #e51937;
+	}
+	.header__menu_right{
+		position: relative;
+	}
+	.menu_right__item{
+		margin-right: 27px;
+}
+	
+	.burger{
+		position: absolute;
+		width: 24px;
+		height: 15px;
+		top: 18px;
+		left: 220px;
+		background: url(img/burger.svg) no-repeat;
+	}
