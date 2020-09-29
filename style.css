@@ -61,7 +61,6 @@ body{
 	.menu_right__item{
 		margin-right: 27px;
 }
-	
 	.burger{
 		position: absolute;
 		width: 24px;
@@ -70,7 +69,6 @@ body{
 		left: 220px;
 		background: url(img/burger.svg) no-repeat;
 	}
-
 	.main{
 		width: 100%;
 		position: relative;
@@ -84,10 +82,6 @@ body{
 	}
 	.first-section__first-img{
 		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	.first-section__first-img{
 		top: 1px;
 		left: -8px;
 	}
@@ -158,6 +152,15 @@ body{
 		height: 92%;
 		padding: 11px 41px;
 		margin-top: 9px;
+		text-decoration: none;
+		border:2px solid #e51937;
+		background: #fff;
+	}
+	.first-section__info__button:hover,
+	.sidebar__buttons__order:hover{
+		color: #b22222;
+		background: #ffc0cb;
+		border-radius: 2px;
 	}
 	.first-section__info__test-drive{
 		position: relative;
@@ -173,10 +176,6 @@ body{
 		background: url(img/steering-wheel.svg) no-repeat;
 		top: 19px;
 		left: -30px;
-	}
-	.first-section__info__button{
-		border:2px solid #e51937;
-		background: #fff;
 	}
 	.first-section__info::after{
 		position: absolute;
@@ -297,6 +296,9 @@ body{
 	.sidebar__buttons__more{
 		margin-right: 30px;
 	}
+	.sidebar__buttons__more:hover{
+		color: #ffc0cb;
+	}
 	.sidebar__buttons__more::after{
 		position: absolute;
 		display: block;
@@ -404,7 +406,7 @@ body{
 		right: 5%;
 	}
 	.third-section__left-block__title{
-		margin: 95px 0 259 189px;
+		margin: 95px 0 259px 189px;
 	}
 	.third-section__left-block__title__text{
 		font: 600 200px/248px Montserrat, arial, helvetica, sans-serif;
@@ -465,4 +467,34 @@ body{
 	}
 	.third-section__left-block__copyright{
 		margin-left: 88%;
+	}
+
+	@media (max-width:768px){
+	.header{
+		margin-bottom: 81px;
+	}
+	.menu_middle,
+	.menu_right{
+		display: none;
+	}
+	.burger{
+		left: 120px;
+    	width: 35px;
+    	height: 23px;
+    	top: 16px;
+    	background: url(img/burger.svg) no-repeat;
+	}
+	.first-section__first-img{
+		left: 9px;
+		top: 97px;
+		width: 58%;
+	}
+	.first-section__header{
+		width: 50%;
+		margin-left: 46px;
+		margin-bottom: 89px;
+	}
+	.first-section__second-img{
+		width: 49%;
+		padding-left: 51px;
 	}
