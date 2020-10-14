@@ -202,7 +202,7 @@ body{
 		color: #e51937;
 		padding: 66px 0 0 73px;
 		margin: 0;
-		width: 350%;
+		width: 76%;
 	}
 	.second-section__sidebar{
 		background: #e51937;
@@ -212,7 +212,6 @@ body{
 	}
 	.second-section__sidebar__info{
 		margin-bottom: 60px;
-		width: 320px;
 	}
 	.second-section__sidebar__info__title,
 	.third-section__sidebar__info__title{
@@ -485,18 +484,19 @@ body{
 		margin-left: 88%;
 		margin-top: 247px;
 	}
-
 	@media (max-width:768px){
 	.header{
-		padding: 24px 0 0 15px;
+		padding: 0 0 0 15px;
 		margin-bottom: 81px;
 	}
-	.nav__menu_middle,
-	.nav__menu_right{
+	.nav__menu_middle{
 		display: none;
 	}
+	.nav__menu_right{
+		visibility: hidden;
+	}
 	.burger{
-		display: visi;
+		visibility: visible;
 		left: 118px;
     	width: 35px;
     	height: 23px;
@@ -504,47 +504,38 @@ body{
     	background-size: cover;
 	}
 	.main__first-section{
-		margin-bottom: 83px;
+		margin-bottom: 48px;
 	}
-	.first-section__first-img{
-		left: -11px;
-		top: 97px;
-		width: 58%;
-	}
-	.first-section__header{
-		width: 50%;
-		margin-left: 27px;
-		margin-bottom: 89px;
-	}
-	.first-section__second-img{
-		width: 49%;
-		padding-left: 31px;
-		margin-bottom: 32px;
+	.first-section__img{
+		min-height: 453px;
+		min-width: 375px;
+		background: url(img/tesla-and-logo-for-ipad.png) no-repeat;
+		background-position: 0 -24px;
+		margin-bottom: 0;
 	}
 	.first-section__info{
-		width: 43%;
 		flex-wrap: wrap;
-		padding: 0 0 0 132px;
+		min-height: 228px;
+		padding:0 3%;
+		box-sizing: border-box;
+		align-items: stretch;
 	}
 	.first-section__info__speed{
 		margin-right: 76px;
 	}
 	.first-section__info__distance{
-		margin-bottom: 54px;
+		margin: 0;
 	}
 	.info__speed__number,
 	.info__distance__number{
 		font: 600 50px/61px Montserrat, arial, helvetica, sans-serif;
-	}
-	.info__speed__number{
-		margin-right: 4px;
 	}
 	.info__speed__value{
 		padding-top: 0 0 0 10px;
 	}
 	.info__speed-img{
 		content: "";
-		margin: 16px 9px 0 0;
+		margin: 15px 9px 0 0;
 		width: 84px;
 		height: 64px;
 	}
@@ -572,8 +563,8 @@ body{
 		width: 32px;
 		height: 32px;
 		background: url(img/red-steering-wheel.svg) no-repeat;
-		top: 22px;
-		left: 42px;
+		top: 21%;
+		left: 14%;
 	}
 	.test-drive{
 		font-size: 16px;
@@ -589,7 +580,7 @@ body{
 		width: 33px;
 		height: 21px;
 		background: url(img/arrow.svg) no-repeat;
-		bottom: -80px;
+		bottom: -44px;
 		left: 48%;
 	}
 	.main__second-section{
@@ -597,26 +588,28 @@ body{
 		background: url(img/tesla-for-ipad.png) no-repeat 0px 56px;
 	}
 	.second-section__title{
-		padding-left: 434px;
+		padding: 66px 29px 0 0;
+		text-align: right;
+		box-sizing: border-box;
 		margin-bottom: 407px;
+		width: 100%;
 	}
 	.second-section__sidebar{
-		padding: 26px 0 0 34px;
+		padding: 52px 0 0 37px;
 		display: flex;
-		width: 51%;
+		width: 100%;
 		flex-wrap: wrap;
 	}
 	.second-section__sidebar__info{
-		margin:0 53px 0 0;
-		width: 43%;
+		margin:0 103px 0 0;
+		width: 45%;
 	}
 	.second-section__sidebar__info__title{
-		margin-bottom: 21px;
+		margin-bottom: 24px;
 	}
 	.second-section__sidebar__points{
-		padding-top: 30px;
-		width: 48%;
-		margin-bottom: 5px;
+		padding-top: 5px;
+		width: 33%;
 	}
 	.sidebar__points__first-point{
 		margin-bottom: 33px;
@@ -625,29 +618,34 @@ body{
 		margin-bottom: 22px;
 	}
 	.sidebar__points__third-point{
-		margin-bottom: 89px;
+		margin-bottom: 73px;
 	}
 	.sidebar__buttons{
-		padding-left: 162px;
-		margin-bottom: 69px;
+		padding-left: 152px;
+		margin-bottom: 55px;
+		width: 60%;
 	}
 	.sidebar__buttons__more{
-		font-size: 17px;
+		font-size: 16px;
+		margin-right: 43px;
 	}
 	.sidebar__buttons__more::after{
 		width: 31px;
 		height: 31px;
 		top: -7px;
-		left: 120px;
+		left: -41px;
 		background-size: cover;
 	}
 	.sidebar__buttons__order{
-		font-size: 17px;
+		font-size: 16px;
 		padding: 16px 57px 13px 63px;
 		border: 3px solid;
 	}
 	.main__third-section{
 		flex-direction: column-reverse;
+	}
+	.third-section__left-block{
+		width: 100%;
 	}
 	.third-section__left-block__title{
 		margin: 4px 0 286px 83px;
@@ -659,10 +657,6 @@ body{
 		width: 747px;
 		top: 115px;
 		left: -15px;
-	}
-	.illustration__text{
-		font-size: 15px;
-		line-height: 13px;
 	}
 	.third-section__left-block__first-illustration{
 		top: 99px;
@@ -686,7 +680,7 @@ body{
 	}
 	.third-section__left-block__third-illustration{
 		width: 185px;
-		right: 388px;
+		right: 130px;
 		bottom: 61px;
 	}
 	.third-section__left-block__third-illustration::before{
@@ -694,18 +688,19 @@ body{
 		left: -26px;
 		height: 86px;
 	}
+	.illustration__text{
+		font-size: 15px;
+		line-height: 13px;
+	}
 	.third-section__sidebar{
-		width: 53.3%;
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 	}
 	.third-section__sidebar__info{
-		margin: 0 66px 113px 34px;
+		margin: 0 73px 113px 34px;
 		padding-top: 62px;
 		width: 42%;
-	}
-	.third-section__sidebar__info__text{
-		width: 314px;
 	}
 	.third-section__left-block__copyright{
 		display: none;
