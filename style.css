@@ -3,7 +3,7 @@ body{
 	color:#fff;
 }
 	.header{
-    	margin-top: 25px;
+    	padding-top: 25px;
     	margin-bottom: 58px;
 }
 	.header__nav{
@@ -31,7 +31,7 @@ body{
   	.header__logo{
 		width: 200px;
 		height: 51px;
-		background: url(img/Tesla-Wordmark-Red.svg) no-repeat;
+		background: url(img/tesla-wordmark-red.svg) no-repeat;
 }
   	.menu__item{
   		position: relative;
@@ -54,6 +54,7 @@ body{
 	.menu__item:hover::after{
 		color: #e51937;
 		width: 100%;
+		cursor: pointer;
 	}
 	.menu__item_red{	
 		color: #e51937;
@@ -257,7 +258,7 @@ body{
 		left: -65px;
 	}
 	.sidebar__points__third-point{
-		margin-bottom: 159px;
+		margin-bottom: 170px;
 	}
 	.sidebar__points__third-point::before{
 		position: absolute;
@@ -295,7 +296,7 @@ body{
 	.sidebar__buttons{
 		padding-left: 28px;
 		width: 312px;
-		margin-bottom: 75px;
+		margin-bottom: 64px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -334,12 +335,13 @@ body{
 		position: relative;
 	}
 	.third-section__sidebar{
-		width: 30%;
+		width: 31%;
 		background: #e51937;
 	}
 	.third-section__sidebar__info{
-		margin: 0 58px 57px 49px;
-		padding-top: 51px;
+		width: 76%;
+		margin: 0;
+		padding: 49px 0 30px 56px;
 	}
 	.third-section__sidebar__info__title{
 		margin: 0 0 13px 0;
@@ -349,7 +351,7 @@ body{
 		margin: 0;
 	}
 	.sidebar__rating{
-		margin: 0 49px 103px 49px;
+		margin: 0 49px 103px 56px;
 		position: relative;
 	}
 	.sidebar__rating__title{
@@ -373,7 +375,7 @@ body{
 	}
 	.sidebar__star{
 		position: relative;
-		margin-left: 144px;
+		margin-left: 150px;
 		margin-bottom: 78px;
 	}
 	.sidebar__star::before{
@@ -418,10 +420,10 @@ body{
 	.third-section__left-block__img{
 		position: absolute;
 		top: 25%;
-		right: 5%;
+		right: 3%;
 	}
 	.third-section__left-block__title{
-		margin: 95px 0 259px 187px;
+		margin: 95px 0 259px 11%;
 	}
 	.third-section__left-block__title__text{
 		font: 600 200px/248px Montserrat, arial, helvetica, sans-serif;
@@ -431,8 +433,8 @@ body{
 	}
 	.third-section__left-block__first-illustration{
 		position: absolute;
-		top: 205px;
-		left: 188px;
+		top: 23%;
+		left: 17%;
 		width: 160px;
 	}
 	.third-section__left-block__first-illustration::before{
@@ -443,15 +445,15 @@ body{
 		height: 281px;
 		background: url(img/rectangle1.svg) no-repeat;
 		top: 18px;
-		left: -16px;
+		left: -16%;
 	}
 	.illustration__text{
 		font: 600 17px/15px Montserrat, arial, helvetica, sans-serif;
 	}
 	.third-section__left-block__second-illustration{
 		position: absolute;
-		top: 157px;
-		left: 466px;
+		top: 18%;
+		left: 46%;
 		width: 160px;
 	}
 	.third-section__left-block__second-illustration::after{
@@ -462,12 +464,12 @@ body{
 		height: 281px;
 		background: url(img/rectangle2.svg) no-repeat;
 		top: 18px;
-		left: -16px;
+		left: -16%;
 	}
 	.third-section__left-block__third-illustration{
 		position: absolute;
-		bottom: 174px;
-		right: 260px;
+		bottom: 22%;
+		right: 25%;
 		width: 228px;
 	}
 	.third-section__left-block__third-illustration::before{
@@ -530,9 +532,6 @@ body{
 	.info__distance__number{
 		font: 600 50px/61px Montserrat, arial, helvetica, sans-serif;
 	}
-	.info__speed__value{
-		padding-top: 0 0 0 10px;
-	}
 	.info__speed-img{
 		content: "";
 		margin: 15px 9px 0 0;
@@ -575,13 +574,6 @@ body{
 		font-size: 17px;
 		background: #e51937;
 		color: #fff;
-	}
-	.first-section__info::after{
-		width: 33px;
-		height: 21px;
-		background: url(img/arrow.svg) no-repeat;
-		bottom: -44px;
-		left: 48%;
 	}
 	.main__second-section{
 		display: block;
@@ -661,6 +653,7 @@ body{
 	.third-section__left-block__first-illustration{
 		top: 99px;
 		width: 130px;
+		left: 26%;
 	}
 	.third-section__left-block__first-illustration::before{
 		height: 201px;
@@ -698,8 +691,8 @@ body{
 		flex-wrap: wrap;
 	}
 	.third-section__sidebar__info{
-		margin: 0 73px 113px 34px;
-		padding-top: 62px;
+		margin-bottom: 113px;
+		padding: 62px 72px 0 35px;
 		width: 42%;
 	}
 	.third-section__left-block__copyright{
@@ -730,16 +723,16 @@ body{
 
 	@media (max-width:375px){
 		.header{
-			padding: 5px 10px 10px 1px;
-			margin-bottom: 12px;
+			padding: 5px 3px 0px 1px;
+			margin: 0 0 22px 0;
 		}
 		.header__logo{
-			margin-right: 56px;
+			margin: 0;
 			background-size: contain;
-			width: 139px;
+			width: 140px;
 		}
-		.header__menu_middle{
-			display: none;
+		.nav__menu_right{
+			min-width: 55px;
 		}
 		.burger{
 			width: 24px;
@@ -751,34 +744,31 @@ body{
 			margin-bottom: 44px;
 		}
 		.first-section__title{
-			width: 40%;
+			width: 95%;
     		font-size: 50px;
    			line-height: 60px;
     		margin-left: 17px;
     		height: 56px;
 		}
 		.first-section__subtitle{
-			width: 44%;
+			width: 95%;
+			margin-left: 5%;
 			font-size: 10px;
 		}
-		.first-section__first-img{
-			left: -20px;
-    		top: 78px;
-    		width: 30%;
-    		background-size: contain;
-		}
-		.first-section__second-img{
-			width: 25%;
-			padding-left: 9px;
-			margin-bottom: 22px;
+		.first-section__img{
+			min-width: 356px;
+    		min-height:193px;
+    		background-size: 386px 198px;
+    		background-position: -16px -38px;
 		}
 		.first-section__info{
-			padding-left: 39px;
-			width: 30%;
+			padding-left: 27px;
+			min-height: 164px;
+			width: 98%;
 		}
 		.first-section__info::after{
-			bottom: -43px;
-			left: 37%;
+			bottom: -16px;
+			left: 49%;
 		}
 		.info__speed-img{
 			width: 45px;
@@ -796,7 +786,7 @@ body{
 			margin-right: 36px;
 		}
 		.first-section__info__distance{
-			margin-bottom: 35px;
+			margin-bottom: 0;
 		}
 		.info__speed__number,
 		.info__distance__number{
@@ -814,6 +804,7 @@ body{
 		}
 		.first-section__info__test-drive{
 			padding: 0;
+			margin-left: 10px;
 			font-size: 13px;
 		}
 		.first-section__info__test-drive::after{
@@ -833,10 +824,79 @@ body{
 		}
 		.second-section__title,
 		.second-section__sidebar__points,
-		.sidebar__buttons{
+		.sidebar__buttons,
+		.sidebar__rating,
+		.third-section__sidebar__buttons{
 			display: none;
 		}
 		.main__second-section{
-			background: url(img/tesla-for-ipad.png) no-repeat;
+			background-size: 499px auto;
+			padding-top: 288px;
+			background-position: -53px -31px;
+		}
+		.second-section__sidebar{
+			padding:19px 0 39px 27px;
+		}
+		.second-section__sidebar__info{
+			width: 100%;
+			margin: 0;
+		}
+		.second-section__sidebar__info__title{
+			margin-bottom: 12px;
+		}
+		.third-section__left-block__img{
+			top: 75px;
+			width: 373px;
+		}
+		.third-section__left-block__title{
+			padding: 26px 0 147px;
+			margin: 0;
+		}
+		.third-section__left-block__title__text{
+			font-size: 100px;
+			line-height: 121px;
+			letter-spacing: -8px;
+		}
+		.illustration__text{
+			font-size: 7px;
+			line-height: 7px;
+		}
+		.third-section__left-block__first-illustration{
+			top: 68px;
+			width: 56px;
+			left: 98px;
+		}
+		.third-section__left-block__first-illustration::before{
+			left:-19px;
+			height: 102px;
+			top: 5px;
+		}
+		.third-section__left-block__second-illustration{
+			width: 61px;
+			left: 191px;
+			top: 51px;
+		}
+		.third-section__left-block__second-illustration::after{
+			width: 6px;
+			height: 58px;
+			top: 7px;
+			left: -13px;
+		}
+		.third-section__left-block__third-illustration{
+			width: 85px;
+			right: 61px;
+			bottom: 35px;
+		}
+		.third-section__left-block__third-illustration::before{
+			width: 6px;
+			top: -19px;
+			left: -14px;
+			height: 47px;
+			background-size: contain;
+		}
+		.third-section__sidebar__info{
+			width: 100%;
+			margin: 0;
+			padding: 18px 0 72px 31px;
 		}
 	}

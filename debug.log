@@ -1,3 +1,5 @@
 [0921/201532.899:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
 [0928/102921.321:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
 [1006/190731.317:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1014/144136.063:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[1014/150741.851:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
