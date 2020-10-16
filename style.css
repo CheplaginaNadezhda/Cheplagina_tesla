@@ -720,7 +720,7 @@ body{
 		top: -5px;
 		left: -28px;
 	}
-
+}
 	@media (max-width:375px){
 		.header{
 			padding: 5px 3px 0px 1px;
