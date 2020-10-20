@@ -13,12 +13,21 @@ body{
 		align-items: center;
 		justify-content: space-between;
 	}
+	input{
+		display: none;
+	}
+	.nav__menu{
+		justify-content: space-between;
+		display: inline-flex;
+		width: 68%;
+	}
 	.nav__menu_middle{
 		min-width: 499px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin: 0;
+		padding: 0;
 	}
 	.nav__menu_right{
 		min-width: 200px;
@@ -81,6 +90,9 @@ body{
 		width: 24px;
 		height: 15px;
 		background: url(img/burger.svg) no-repeat;
+	}
+	.burger::hover{
+		cursor: pointer;
 	}
 	.main{
 		width: 100%;
@@ -491,23 +503,46 @@ body{
 	}
 	@media (max-width:768px){
 	.header{
+		position: relative;
 		padding: 25px 0 0 15px;
 		margin-bottom: 81px;
 	}
-	.nav__menu_middle{
-		display: none;
-	}
-	.nav__menu_right{
+	.nav__menu{
+		position: absolute;
+		width: 33%;
+		height: 355px;
+		flex-direction: column;
+		background: white;
+		top: 70%;
+		left: 61%;
+		z-index: 2;
 		visibility: hidden;
+		border-radius: 12%;
+	}
+	.nav__menu_right,
+	.nav__menu_middle{
+		flex-direction: column;
+		min-width: 15%;
+		padding: 0;
+	}
+	.menu__item{
+		font-size: 25px;
+		line-height: 50px;
 	}
 	.burger{
 		visibility: visible;
-		left: 118px;
+		position: absolute;
+		left: 242px;
     	width: 35px;
     	height: 23px;
-    	top: 14px;
+    	top: -14px;
     	background-size: cover;
+    	cursor: pointer;
 	}
+	#popup:checked ~ *.nav__menu{
+	visibility: visible;
+	z-index: 2;
+}
 	.main__first-section{
 		margin-bottom: 48px;
 	}
@@ -745,6 +780,9 @@ body{
 			background-size: contain;
 			width: 140px;
 		}
+		.nav__menu{
+			width: 38%;
+		}
 		.nav__menu_right{
 			min-width: 55px;
 		}
@@ -752,7 +790,8 @@ body{
 			width: 24px;
 			height: 22px;
 			background-size: contain;
-			left: 134px;
+			left: 111px;
+			top: -19px;
 		}
 		.first-section__header{
 			margin-bottom: 44px;

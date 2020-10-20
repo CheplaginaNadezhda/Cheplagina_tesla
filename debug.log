@@ -7,3 +7,7 @@
 [1018/173202.140:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1019/111328.314:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1019/115910.000:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1019/173431.285:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1020/111101.758:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1020/155027.056:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1020/155752.892:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
