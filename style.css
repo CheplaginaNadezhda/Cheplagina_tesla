@@ -5,7 +5,7 @@ body{
 	.header{
     	padding-top: 25px;
     	margin-bottom: 58px;
-}
+	}
 	.header__nav{
 		max-width: 1335px;
 		width: 94%;
@@ -47,14 +47,14 @@ body{
 		width: 200px;
 		height: 51px;
 		background: url(img/tesla-wordmark-red.svg) no-repeat;
-}
+	}
   	.menu__item{
   		position: relative;
 		text-decoration: none;
 		font: 600 15px/18px Montserrat, arial, helvetica, sans-serif;
 		color: #000;
 		transition: color .5s;
-}
+	}
 	.menu__item::after{
 		position: absolute;
 		content: "";
