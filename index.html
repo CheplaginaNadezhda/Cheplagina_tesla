@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<title>Tesla</title>
 </head>
@@ -12,6 +13,9 @@
    	<nav class="header__nav">
 		<div class="header__logo">
 		</div>
+		 <div class="nav__menu-container">
+		 <input type="checkbox" id='popup' value='1' name="check">
+		  <div class="nav__menu">  
 			<ul class="nav__menu_middle">
 				<li class="menu_middle__item"><a href="#" class="menu__item menu__item_red">Model S</a></li>
 				<li class="menu_middle__item"><a href="#" class="menu__item">Model X</a></li>
@@ -22,8 +26,10 @@
 			<ul class="nav__menu_right">
 				<li class="menu_right__item"><a href="#" class="menu__item">Магазин</a></li>
 				<li class="menu_right__item"><a href="#" class="menu__item">Войти</a></li>
-				<div class="burger"></div>
 			</ul>
+		  </div>
+		 <label for="popup"><div class="burger"></div></label>
+		</div>
 	</nav>
    </header>
    <main class="main">
@@ -34,16 +40,20 @@
 	    </div> 
 	    <div class='first-section__img'></div>
 	    <div class="first-section__info">
-	      <img class="info__speed-img" src="img/speed.svg">
-		  <div class="first-section__info__speed">
+	     <div class="info__speed-container">
+	      <img class="info__speed-img" src="img/speed.svg" alt="speed">
+		  <div class="info__speed">
 			<p class="info__speed__number">2,7<span class="info__speed__value">сек</span></p>
 			<p class="info__speed__add">0-100 км/час</p>
 		  </div>
-		  <img class="info__distance-img" src="img/stroke.svg">
-		  <div class="first-section__info__distance">
+		 </div>
+		 <div class="info__distance-container">
+		  <img class="info__distance-img" src="img/stroke.svg" alt="distance">
+		  <div class="info__distance">
 			<p class="info__distance__number">632<span class="info__distance__value">км</span></p>
 			<p class="info__distance__add">запас хода</p>
 		  </div>
+		 </div>
 		  <div class="first-section__info__test-drive">
 			<p class="test-drive">Тест драйв</p>
 		  </div>
@@ -55,7 +65,7 @@
 		<aside class="second-section__sidebar">
 			<div class="second-section__sidebar__info">
 			  <h3 class="second-section__sidebar__info__title">Будущее вождения</h3>
-			  <p class="second-section__sidebar__info__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным <nobr> 17-дюймовым</nobr> сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+			  <p class="second-section__sidebar__info__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-&nbsp;дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
 		    </div>
 		    <div class="second-section__sidebar__points">
 			<div class="sidebar__points__first-point">
@@ -92,31 +102,31 @@
 				<p class="sidebar__rating__point">Водитель</p>
 				<p class="sidebar__rating__point">Пассажир</p>
 				<div class="sidebar__rating__stars">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
-					<img src="img/star.svg">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
+					<img src="img/star.svg" alt="star">
 				</div>
 			</div>
 			<div class="sidebar__star">
@@ -133,7 +143,7 @@
 		 <div class="third-section__left-block__title">
 			<p class="third-section__left-block__title__text">Model S</p>
 		 </div>
-		 <img class="third-section__left-block__img" src="img/car-frame.svg">
+		 <img class="third-section__left-block__img" src="img/car-frame.svg" alt="car">
 		 <div class="third-section__left-block__first-illustration">
 			<p class="illustration__text">Защита от удара спереди</p>
 		 </div>
@@ -144,7 +154,7 @@
 			<p class="illustration__text">Минимальный риск перевернуться в аварии</p>
 		 </div>
 		 <div class="third-section__left-block__copyright">
-		 	<img class="left-block__copyright" src="img/copyright.png">
+		 	<img class="left-block__copyright" src="img/copyright.png" alt="copyright">
 		 </div>
 		</div>
 	</section>
